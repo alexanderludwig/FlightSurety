@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>FlightSurety</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">FlightSurety - Passenger</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+
+    <div class="modal fade" id="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-title">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="modal-body">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Ok</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+
+
+    <main class="container">
+
+        <div id="display-wrapper" class="top-20">
+        </div>
+        <btn class="btn btn-primary btn-lg" id="btn-account-information">Retrieve account information</btn>            
+
+        <div class="row mt-4">
+            
+            <div id="information-account-address" class="col-sm-4 field"></div>
+            <div id="information-account-address" class="col-sm-4 field"></div>
+
+            <div id="debit" class="col-sm-4"> </div>
+        </div>
+
+
+        <div class="row mt-4">
+            <h3>Buy insurance</h3>
+            <input type="text" class="form-control mt-2 mb-3" placeholder="Airline address" id="text-buy-insurance-flight-address"> 
+            <input type="text" class="form-control mt-2 mb-3" placeholder="Flight Number" id="text-buy-insurance-flight-number"> 
+            <input type="text" class="form-control mt-2 mb-3" placeholder="Timestamp" id="text-buy-insurance-flight-ts"> 
+            <input type="text" class="form-control mt-2 mb-3" placeholder="Amount" id="text-buy-insurance-amount"> 
+            <btn class="btn btn-primary btn-lg" id="btn-buy-insurance">Buy insurance</btn>
+        </div>
+        <div class="row mt-4">
+            <h3>Fetch flight status</h3>
+            <input type="text" class="form-control mt-2 mb-3" placeholder="Airline address" id="text-status-update-flight-address"> 
+            <input type="text" class="form-control mt-2 mb-3" placeholder="Flight Number" id="text-status-update-flight-number"> 
+            <input type="text" class="form-control mt-2 mb-3" placeholder="Timestamp" id="text-status-update-flight-ts"> 
+            <btn class="btn btn-primary btn-lg" id="btn-retrieve-status-update">Retrieve update</btn>
+        </div>
+
+        <div class="row mt-4">
+            <h3>Claim funds</h3>
+            <input type="text" class="form-control mt-2 mb-3" placeholder="Airline address" id="text-claim-funds-address"> 
+            <btn class="btn btn-primary btn-lg" id="btn-claim-funds">Claim funds</btn>
+        </div>
+    
+
+    </main>
+
+</body>
+
+</html>

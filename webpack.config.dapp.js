@@ -32,12 +32,21 @@ module.exports = {
     ]
   },
   plugins: [
-    new HtmlWebpackPlugin({ 
+    new HtmlWebpackPlugin({
       template: path.join(__dirname, "src/dapp/index.html")
-    })
+    }),
+    new HtmlWebpackPlugin({ // Also generate a test.html
+      filename: 'airline.html',
+      template: 'src/dapp/airline.html'
+    }),
+    new HtmlWebpackPlugin({ // Also generate a test.html
+      filename: 'passenger.html',
+      template: 'src/dapp/passenger.html'
+    }),
   ],
   resolve: {
     extensions: [".js"]
+
   },
   devServer: {
     contentBase: path.join(__dirname, "dapp"),

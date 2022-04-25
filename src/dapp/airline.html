@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>FlightSurety</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">FlightSurety - Airline</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+
+    <div class="modal fade" id="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-title">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="modal-body">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Ok</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <main class="container">
+
+        <div id="display-wrapper" class="top-20">
+        </div>
+        <div class="row mt-4">
+            <h3>Register Airline</h3>
+            <input type="text" class="form-control mt-2 mb-3" id="text-register-airline"> 
+            <btn class="btn btn-primary btn-lg" id="btn-confirm-airline">1. Confirm airline</btn>
+            <btn class="btn btn-primary btn-lg" id="btn-register-airline">2. Register airline</btn>
+            <btn class="btn btn-primary btn-lg" id="btn-fund-airline">3. Provide funding</btn>
+
+        </div>
+        <div class="row mt-4">
+            <h3>Register Flight</h3>
+            <input type="text" class="form-control mt-2 mb-3" placeholder="Airline address" id="text-register-flight-address"> 
+            <input type="text" class="form-control mt-2 mb-3" placeholder="Flight Number" id="text-register-flight-number"> 
+            <input type="text" class="form-control mt-2 mb-3" placeholder="Timestamp" id="text-register-flight-ts"> 
+            <btn class="btn btn-primary btn-lg" id="btn-register-flight">Register flight</btn>
+        </div>
+
+        <div id="data-table">
+            <table id="html-data-table">
+                <tr>
+                    <th>Registered airlines</th>
+                </tr>
+            </table>    
+        </div>
+
+    
+    
+
+    </main>
+
+</body>
+
+</html>
